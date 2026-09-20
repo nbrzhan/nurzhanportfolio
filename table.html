@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table & Form | Nurzhan Bakirov</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Nurzhan Bakirov</h1>
+        <p class="subtitle">Swimming Coach Portfolio</p>
+        
+        <nav class="navbar">
+            <a href="index.html">Home (Tasks 1 & 2)</a>
+            <a href="exercise1/index.html">Tribute (Task 3)</a>
+            <a href="table.html">Table & Form (Task 4)</a>
+            <a href="midterm.html">Midterm (Task 5)</a>
+        </nav>
+    </header>
+    <div class="layout-container single-column">
+        
+        <!-- Table Section -->
+        <div class="section">
+            <h2 id="table-heading">Student Progress & Rates</h2>
+            <table class="custom-table">
+                <thead>
+                    <tr>
+                        <th>Student Name</th>
+                        <th>Level</th>
+                        <th>Grade / Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Colspan -->
+                    <tr class="table-group">
+                        <td colspan="3">VIP Group (Morning)</td>
+                    </tr>
+                    <tr>
+                        <td>Alimzhan Assel</td>
+                        <td>Beginner</td>
+                        <td>Excellent</td>
+                    </tr>
+                    <tr>
+                        <td>Dimash Kudaibergen</td>
+                        <td>Advanced</td>
+                        <td>Good</td>
+                    </tr>
+                    
+                    <!-- Hollywood -->
+                    <tr class="table-group">
+                        <td colspan="3">Hollywood Group (Evening)</td>
+                    </tr>
+                    <tr>
+                        <td>Tom Hardy</td>
+                        <td>Intermediate</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr>
+                        <td>Brad Pitt</td>
+                        <td>Master</td>
+                        <td>GORLAMIIIIIIIII 🤌</td>
+                    </tr>
+
+                    <!-- Rowspan -->
+                    <tr class="table-group">
+                        <td colspan="3">MI6 Secret Agents</td>
+                    </tr>
+                    <tr>
+                        <td>Pierce Brosnan</td>
+                        <td rowspan="2">007 Agent</td>
+                        <td>Good</td>
+                    </tr>
+                    <tr>
+                        <td>James Bond</td>
+                        <td>Perfecto</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Form Section -->
+        <div class="section">
+            <h2>Sign Up for Training</h2>
+            <form action="#" method="POST" class="custom-form">
+                
+                <!-- Inputs -->
+                <div class="form-group">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email">
+                </div>
+
+                <!-- Dropdown -->
+                <div class="form-group">
+                    <label for="level">Select Your Level:</label>
+                    <select id="level" name="level">
+                        <option value="beginner">Beginner (Never swam before)</option>
+                        <option value="intermediate">Intermediate (Know basics)</option>
+                        <option value="advanced">Advanced (Technique improvement)</option>
+                    </select>
+                </div>
+
+                <!-- Radios -->
+                <div class="form-group">
+                    <p class="label-text">Do you have previous swimming experience?</p>
+                    <label class="radio-label">
+                        <input type="radio" name="experience" value="yes" checked> Yes
+                    </label>
+                    <label class="radio-label">
+                        <input type="radio" name="experience" value="no"> No
+                    </label>
+                </div>
+
+                <!-- Textarea -->
+                <div class="form-group">
+                    <label for="comments">Additional Comments / Medical Conditions:</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Tell me about your goals..."></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button type="submit" class="submit-btn">Submit Request</button>
+
+            </form>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>© 2026 Nurzhan Bakirov. HTML & CSS Assignment #1.</p>
+    </footer>
+
+</body>
+</html>
