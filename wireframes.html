@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wireframes - AquaFit</title>
+    <style>
+        body {
+            background-color: #888;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 50px;
+            padding: 40px;
+            font-family: Arial, sans-serif;
+        }
+        .page-label {
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: -30px;
+        }
+        /* Базовый стиль страницы */
+        .wireframe {
+            width: 1024px;
+            min-height: 600px;
+            background-color: white;
+            border: 3px solid #333;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.5);
+            display: flex;
+            flex-direction: column;
+        }
+        /* Шапка и Подвал */
+        .header, .footer {
+            background-color: #eee;
+            padding: 20px 40px;
+            border-bottom: 2px solid #ccc;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer {
+            border-bottom: none;
+            border-top: 2px solid #ccc;
+            margin-top: auto;
+        }
+        .logo-box {
+            width: 120px;
+            height: 40px;
+            background-color: #ccc;
+            border: 2px dashed #999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #666;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-link {
+            width: 70px;
+            height: 15px;
+            background-color: #bbb;
+            border-radius: 3px;
+        }
+        /* Контентная часть */
+        .content {
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+        /* Элементы макета */
+        .img-box {
+            background-color: #e5e5e5;
+            border: 2px dashed #aaa;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #888;
+            font-weight: bold;
+        }
+        .hero { height: 250px; font-size: 24px; }
+        .text-block { display: flex; flex-direction: column; gap: 10px; }
+        .text-line { height: 12px; background-color: #ddd; width: 100%; border-radius: 2px;}
+        .text-line.short { width: 60%; }
+        .grid-3 { display: flex; gap: 30px; }
+        .grid-3 > div { flex: 1; height: 150px; }
+        
+        .flex-row { display: flex; gap: 30px; align-items: center; }
+        .flex-row .img-box { width: 40%; height: 200px; }
+        .flex-row .text-block { width: 60%; }
+
+        .program-row { display: flex; gap: 20px; height: 100px; }
+        .program-row .img-box { width: 150px; height: 100px; }
+        .program-row .text-block { flex: 1; justify-content: center; }
+
+        .table-grid { width: 100%; height: 250px; border: 2px solid #ccc; display: flex; flex-direction: column; }
+        .table-row { display: flex; flex: 1; border-bottom: 1px solid #ccc; }
+        .table-cell { flex: 1; border-right: 1px solid #ccc; }
+
+        .form-box { width: 50%; display: flex; flex-direction: column; gap: 15px; }
+        .input-box { height: 40px; background-color: #fff; border: 2px solid #ccc; }
+        .btn-box { height: 40px; background-color: #999; width: 120px; color: white; display: flex; align-items: center; justify-content: center; font-weight: bold; }
+    </style>
+</head>
+<body>
+
+    <div class="page-label">Page 1: Home</div>
+    <div class="wireframe">
+        <div class="header">
+            <div class="logo-box">LOGO</div>
+            <div class="nav-links"><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div></div>
+        </div>
+        <div class="content">
+            <div class="img-box hero">MAIN BANNER IMAGE (HERO)</div>
+            <div class="text-block" style="align-items: center; margin: 20px 0;">
+                <div class="text-line" style="width: 30%; height: 20px;"></div>
+                <div class="text-line" style="width: 50%;"></div>
+            </div>
+            <div class="grid-3">
+                <div class="img-box">FEATURE 1</div>
+                <div class="img-box">FEATURE 2</div>
+                <div class="img-box">FEATURE 3</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-box" style="width: 80px;">LOGO</div>
+            <div class="text-line short" style="width: 200px;"></div>
+        </div>
+    </div>
+
+    <div class="page-label">Page 2: About Us</div>
+    <div class="wireframe">
+        <div class="header">
+            <div class="logo-box">LOGO</div>
+            <div class="nav-links"><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div></div>
+        </div>
+        <div class="content">
+            <div class="text-line" style="width: 20%; height: 24px; margin-bottom: 20px;"></div>
+            <div class="flex-row">
+                <div class="img-box">ABOUT IMAGE</div>
+                <div class="text-block">
+                    <div class="text-line"></div><div class="text-line"></div><div class="text-line"></div><div class="text-line"></div><div class="text-line short"></div>
+                </div>
+            </div>
+            <div class="text-line" style="width: 20%; height: 24px; margin: 20px 0;"></div>
+            <div class="grid-3">
+                <div class="img-box" style="border-radius: 50%;">TEAM 1</div>
+                <div class="img-box" style="border-radius: 50%;">TEAM 2</div>
+                <div class="img-box" style="border-radius: 50%;">TEAM 3</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-box" style="width: 80px;">LOGO</div>
+            <div class="text-line short" style="width: 200px;"></div>
+        </div>
+    </div>
+
+    <div class="page-label">Page 3: Programs</div>
+    <div class="wireframe">
+        <div class="header">
+            <div class="logo-box">LOGO</div>
+            <div class="nav-links"><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div></div>
+        </div>
+        <div class="content">
+            <div class="text-line" style="width: 30%; height: 24px; margin-bottom: 20px;"></div>
+            <div class="program-row">
+                <div class="img-box">PROGRAM 1</div>
+                <div class="text-block"><div class="text-line"></div><div class="text-line short"></div><div class="btn-box" style="height: 30px;">Details</div></div>
+            </div>
+            <div class="program-row">
+                <div class="img-box">PROGRAM 2</div>
+                <div class="text-block"><div class="text-line"></div><div class="text-line short"></div><div class="btn-box" style="height: 30px;">Details</div></div>
+            </div>
+            <div class="program-row">
+                <div class="img-box">PROGRAM 3</div>
+                <div class="text-block"><div class="text-line"></div><div class="text-line short"></div><div class="btn-box" style="height: 30px;">Details</div></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-box" style="width: 80px;">LOGO</div>
+            <div class="text-line short" style="width: 200px;"></div>
+        </div>
+    </div>
+
+    <div class="page-label">Page 4: Schedule & Prices</div>
+    <div class="wireframe">
+        <div class="header">
+            <div class="logo-box">LOGO</div>
+            <div class="nav-links"><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div></div>
+        </div>
+        <div class="content">
+            <div class="text-line" style="width: 25%; height: 24px; margin-bottom: 10px;"></div>
+            <div class="table-grid">
+                <div class="table-row" style="background: #eee;"><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div></div>
+                <div class="table-row"><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div></div>
+                <div class="table-row"><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div></div>
+                <div class="table-row"><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div><div class="table-cell"></div></div>
+            </div>
+            <div class="grid-3" style="margin-top: 20px;">
+                <div class="img-box" style="height: 120px; flex-direction: column;">PRICE 1 <div class="btn-box" style="height:25px; margin-top:10px;">Buy</div></div>
+                <div class="img-box" style="height: 120px; flex-direction: column;">PRICE 2 <div class="btn-box" style="height:25px; margin-top:10px;">Buy</div></div>
+                <div class="img-box" style="height: 120px; flex-direction: column;">PRICE 3 <div class="btn-box" style="height:25px; margin-top:10px;">Buy</div></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-box" style="width: 80px;">LOGO</div>
+            <div class="text-line short" style="width: 200px;"></div>
+        </div>
+    </div>
+
+    <div class="page-label">Page 5: Contact</div>
+    <div class="wireframe">
+        <div class="header">
+            <div class="logo-box">LOGO</div>
+            <div class="nav-links"><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div><div class="nav-link"></div></div>
+        </div>
+        <div class="content">
+            <div class="text-line" style="width: 25%; height: 24px; margin-bottom: 20px;"></div>
+            <div class="flex-row" style="align-items: flex-start;">
+                <div class="form-box">
+                    <div class="input-box"></div>
+                    <div class="input-box"></div>
+                    <div class="input-box" style="height: 100px;"></div>
+                    <div class="btn-box">Submit</div>
+                </div>
+                <div class="img-box" style="width: 50%; height: 300px;">GOOGLE MAP</div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="logo-box" style="width: 80px;">LOGO</div>
+            <div class="text-line short" style="width: 200px;"></div>
+        </div>
+    </div>
+
+</body>
+</html>
